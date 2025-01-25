@@ -1,0 +1,57 @@
+# Bank Account System
+
+## Overview
+This C program simulates a basic bank account management system. It allows users to create accounts, log in, check balances, transfer money, and view account details. The program uses file handling to store and retrieve user data.
+
+## Features
+- Create a new bank account
+- Log in for existing users
+- Check account balance
+- Transfer money to another account
+- Display account information
+- Logout and exit options
+
+## Functions
+### `gotoxy(int x, int y)`
+This function sets the cursor position to coordinates `(x, y)`.
+
+### `void account(void)`
+Creates a new bank account by collecting user information and storing it in a file.
+
+### `void accountcreated(void)`
+Displays a success message after account creation and redirects to login.
+
+### `void login(void)`
+Prompts the user to log in by entering a username and password. If credentials match, redirects to the logged-in screen.
+
+### `void loginsu(void)`
+Displays a success message after a successful login.
+
+### `void display(char username1[])`
+Displays account information and provides options to check balance, transfer money, logout, or exit.
+
+### `void transfermoney(void)`
+Transfers money from one account to another by updating the corresponding files.
+
+### `void checkbalance(char username2[])`
+Displays the balance dashboard with the total balance of the user.
+
+### `void logout(void)`
+Logs the user out and redirects to the login screen.
+
+## Usage
+1. Compile the code using a C compiler.
+2. Run the executable file.
+3. Follow the on-screen instructions to create an account, log in, and perform various banking operations.
+
+## Dependencies
+- `conio.h`
+- `stdio.h`
+- `stdlib.h`
+- `string.h`
+- `windows.h`
+
+## Note
+- Ensure that the files `username.txt` and `mon.txt` are accessible for reading and writing.
+
+
